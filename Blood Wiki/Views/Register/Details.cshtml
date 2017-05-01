@@ -1,0 +1,49 @@
+﻿@model Blood_Wiki.Models.Register
+
+@{
+    ViewBag.Title = "Details";
+}
+
+
+<div>
+    <h4>Details</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.place)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.place)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.phone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.phone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.group)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.group)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to Find", "Index")
+</p>
